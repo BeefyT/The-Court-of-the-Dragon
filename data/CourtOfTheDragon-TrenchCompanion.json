@@ -1,0 +1,5481 @@
+{
+  "id": "hb_dragoncourt",
+  "name": "The Court of the Dragon",
+  "author": "Well Done Minis",
+  "description": [
+    {
+      "tags": {
+        "desc_type": "paragraph"
+      },
+      "content": "An original homebrew faction for Trench Crusade: apostate vampire knights of 1573 Wallachia, anathema to Heaven and in arrears to Hell. Hyper-elite lords lead an expendable herd; they start a battle weaker than most and end it stronger."
+    },
+    {
+      "tags": {
+        "desc_type": "paragraph"
+      },
+      "content": "Rules v0.10. Free community content, requires the Trench Crusade rulebook. Original IP by Well Done Minis."
+    }
+  ],
+  "files": [
+    {
+      "type": "faction",
+      "data": [
+        {
+          "id": "fc_dragoncourt",
+          "source": "homebrew",
+          "tags": {
+            "url_custom": "court-of-the-dragon",
+            "homebrew_id": 470028
+          },
+          "contextdata": {
+            "faction_keyword": {
+              "name": "kw_dragoncourt"
+            }
+          },
+          "name": "The Court of the Dragon",
+          "team": "none",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Fallen knights of the Order of the Dragon who took the Scholomance's bargain and drank from three sleeping Elders beneath the Arges crag. Damned by Heaven, hunted by Hell for a debt they never meant to repay."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Hyper-elite vampire lords lead an expendable herd of the dominated and the bled. The Court begins a battle weaker than most factions and ends it stronger, powered by SATED MARKERS harvested through the Feed."
+            }
+          ],
+          "rules": [
+            "rl_dragoncourt_satedmarkers",
+            "rl_dragoncourt_stateladder",
+            "rl_dragoncourt_bloodcrazed",
+            "rl_dragoncourt_theleash",
+            "rl_dragoncourt_undeadfortitude",
+            "rl_dragoncourt_betrayedchurch",
+            "rl_dragoncourt_gravelaw",
+            "rl_dragoncourt_armoury",
+            "rl_dragoncourt_neithershepherd",
+            "rl_dragoncourt_gloryitems",
+            "rl_dragoncourt_longhunger"
+          ],
+          "options": []
+        }
+      ]
+    },
+    {
+      "type": "keyword",
+      "data": [
+        {
+          "id": "kw_dragoncourt",
+          "source": "homebrew",
+          "tags": {
+            "category": "faction",
+            "faction": "fc_dragoncourt",
+            "type": "tag",
+            "homebrew_id": 470028
+          },
+          "name": "DRAGON COURT",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "This model is part of the Court of the Dragon faction."
+            }
+          ]
+        },
+        {
+          "id": "kw_feed",
+          "source": "homebrew",
+          "tags": {
+            "type": "tag",
+            "homebrew_id": 470028
+          },
+          "name": "FEED",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "A model with the FEED keyword may take the Feed ACTION (see Sated Markers) to harvest Sated from a valid target."
+            }
+          ]
+        },
+        {
+          "id": "kw_vampire",
+          "source": "homebrew",
+          "tags": {
+            "type": "tag",
+            "homebrew_id": 470028
+          },
+          "name": "VAMPIRE",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "A deathless lord of the Court. VAMPIRE models use Sated Markers and the State Ladder, and cannot be targeted by their own faction's Feed ACTION."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_thunderous",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Thunderous",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "+1 INJURY DICE against targets within 4\"."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_thirst",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Thirst",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The first time this weapon wounds a model each Activation, the wielder gains 1 Sated."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_bleedingshot",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Bleeding Shot",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Place 1 additional BLOOD MARKER on any model wounded by this weapon."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_reaverdrinks",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Reaver Drinks Deep",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Each time this weapon takes a model Out of Action, the wielder gains 1 Sated."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_hungryrounds",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Hungry Rounds",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Place 1 extra BLOOD MARKER on a wounded target, and a friendly vampire within 6\" of that target may immediately take a Feed ACTION against it as if in contact."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_snared",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Snared",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "This weapon makes no Injury Roll. On a successful hit, the target may not Dash or Charge until the end of its next Activation."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_highbornedge",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Highborn Edge",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "While the wielder is Ascended, this weapon gains CLEAVE 2."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_waltzofknives",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Waltz of Knives",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "+1 DICE to the wielder's Melee Attacks; the wielder may not carry a Shield. After resolving its Melee Attacks, the wielder may move up to 2\"; this move does not count as Retreating."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_settoreceive",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Set to Receive",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Enemies gain no bonus DICE for Charging the wielder. If the wielder did not move this Activation, its Melee Attacks against a model that Charged it this Turn gain +1 INJURY DICE."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_theimpaling",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Impaling",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "When this weapon takes an enemy Out of Action, you may place a permanent Impaled Marker where it stood, then this weapon is lost for the rest of the game. The area within 3\" of an Impaled Marker is Difficult terrain for non-DRAGON COURT models."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_interred",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Interred",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "While the wearer has 1 or more BLOOD MARKERS, Injury Rolls against the wearer suffer an additional -1 INJURY MODIFIER."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_paupersward",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Pauper's Ward",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The first time each game the wearer would be taken Out of Action by a Ranged Attack, it is Down instead."
+            }
+          ]
+        },
+        {
+          "id": "kw_dominion",
+          "source": "homebrew",
+          "tags": {
+            "type": "tag",
+            "homebrew_id": 470028
+          },
+          "name": "DOMINION",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "A model with the DOMINION keyword holds the Leash. Friendly Blood-Crazed models within 6\" of a DOMINION model must Charge the nearest enemy model rather than the nearest model of any kind."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_chokedamp",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Choke-Damp",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A Ranged Attack made with this weapon may target a friendly model."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_hookholds",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Hook Holds",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "When an enemy model within 1\" of the wielder takes a Retreat ACTION, place 1 BLOOD MARKER next to that enemy model before any Melee Attacks allowed by the retreat are resolved."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_laidatthethroat",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Laid at the Throat",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "+1 INJURY DICE against a model that has 1 or more BLOOD MARKERS."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_ninewinters",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Nine Winters Buried",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Counts as Standard Armour. Increases the wearer's REGENERATE by 1, to a maximum of REGENERATE (2). The wearer's Movement is reduced by 1\"."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_gravesmoke",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Grave-Smoke",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "At the end of this model's Activation, place 1 BLOOD MARKER on 1 enemy model within 8\"."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_chainedatshoulder",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Chained at the Shoulder",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "At the start of each of the Leech's Activations, if a friendly Bled is within 2\", you may make an Injury Roll against that Bled. If you do, the Leech gains 1 Sated."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_driventogether",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Driven Together",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "While a friendly Bled is within 6\" of a model with a Herd-Bell, the range of its Cattle rule is 6\" instead of 3\"."
+            }
+          ]
+        },
+        {
+          "id": "kw_hb470028_hewnfrozenlake",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Hewn from the Frozen Lake",
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "After the attack has been resolved, the area within 3\" of the target point is treated as Difficult terrain until the end of the following Turn. This affects all models, friend and foe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "factionrule",
+      "data": [
+        {
+          "id": "rl_dragoncourt_satedmarkers",
+          "name": "Sated Markers",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Court's power is measured in SATED MARKERS, blood harvested from others, kept entirely separate from BLOOD MARKERS."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "BLOOD MARKERS on a Court model function as normal: your opponent may spend them against your rolls - they are a weakness. SATED MARKERS are the Court's strength, fuelling its states and abilities. A model can hold a maximum of 6 Sated Markers. Track them with a distinct counter."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Feed ACTION: a model with the FEED keyword may take a Feed ACTION against an enemy model, or a friendly non-VAMPIRE model, within 1\" that has no BLESSING MARKERS and does not have the ARTIFICIAL keyword, then take a Risky Success Roll. On a Success, place 1 BLOOD MARKER on that model and the feeding model gains 1 SATED MARKER. Feed is a Risky action - a failure ends the Activation - so it is usually taken last."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_stateladder",
+          "name": "The State Ladder",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Every vampire model checks its Sated total to determine its state: Base (0-2 Sated), Ascended (3-4 Sated), Blood-Crazed (5-6 Sated)."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A model's state is locked at the start of its Activation and does not change until the start of its next Activation, even if it gains or spends Sated in between. A model may use only one ability that costs Sated per Activation."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_theleash",
+          "name": "The Leash",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Each time a friendly Blood-Crazed model is Activated, check for a friendly DOMINION model within 6\". In range: it must Charge the nearest enemy model. Not in range: it must Charge the nearest model, friend or foe. While no friendly DOMINION model is on the battlefield, every friendly Blood-Crazed model is loose and must Charge the nearest model, friend or foe."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_betrayedchurch",
+          "name": "The Betrayed Church",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Court are apostates. Models attacking a Court model gain +1 INJURY DICE if they have one or more BLESSING MARKERS."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_gravelaw",
+          "name": "Grave-Law",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A model may reform (return from Out of Action) no more than once per game, regardless of source."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_armoury",
+          "name": "Armoury Restrictions",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Court may not take FIRE weapons, and no Court model may wear Machine Armour - the Order predates the machine, and dead flesh will not be bolted into it. Effects that would grant Machine Armour grant nothing."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_neithershepherd",
+          "name": "Neither Shepherd Nor Wolf",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "For Mercenary recruitment, a Court of the Dragon Warband is neither Faithful nor Fallen. It may not recruit the Mercenaries in Warbands of Trench Crusade - including those available to any Warband - and may instead recruit the Court Mercenaries. Each is 0-1."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_gloryitems",
+          "name": "Court Glory Items",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A Court of the Dragon Warband may purchase the Court Glory Items. It may also purchase Glory Items available to any Warband, with two exceptions: it may not purchase a Trench Dog (see The Grey Brothers) or a Sniper Scope (see Nightglass Sight)."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_longhunger",
+          "name": "Campaign Play: The Long Hunger",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "This replaces the Trauma Step for a Court Warband. All other Campaign Phase steps are unchanged. The herd - the Bled and the Strix - are mortal and live and die by the standard rules. All rates in this rule are provisional."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Thirst: an ELITE vampire never rolls on the Trauma Table and never gains Battle Scars. Instead, in the Trauma Step, if it was taken Out of Action during the game it gains 1 Thirst Marker. 1 Thirst - Fraying: it becomes Blood-Crazed at 4+ Sated instead of 5+. 2 Thirst - Slipping: halve its Leash ranges, both projected and received. 3 Thirst - Lost: replace its entry on your Warband Roster with a Shrike; its Experience and Skills are gone and its Battlekit moves to your Arsenal."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "If the Voivode is Lost, promote one Boyar to Voivode - keeping its Experience, Skills and any Battlekit it can legally carry - or recruit a new Voivode at the Quartermaster Step."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Torpor: the Shrike and the Leech make Survival Rolls as normal Troops, but on a 1-2 they are not removed from your roster - they enter Torpor and miss the next battle."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Vintage: when your Warband collects Loot in the Exploration Step, you may take any portion of it as Vintage instead of ducats, at 10 ducats = 1 Vintage. Vintage cannot be spent on Battlekit, Glory Items or recruits. In the Quartermaster Step you may spend 10 Vintage to remove 1 Thirst Marker from one vampire, no more than once per Campaign Phase."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_bloodcrazed",
+          "name": "Blood-Crazed Behaviour",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A Blood-Crazed model may take no ACTION other than Move, Dash, Charge or Fight, and must take a Charge ACTION if it is able to. Which model it must Charge is determined by The Leash."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        },
+        {
+          "id": "rl_dragoncourt_undeadfortitude",
+          "name": "Undead Fortitude",
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Court vampires do not bleed out as mortals do. A model with the VAMPIRE keyword relies on REGENERATE rather than on medical treatment: it cannot benefit from a Medi-kit, and no Treat ACTION may be carried out on it."
+            }
+          ],
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "options": []
+        }
+      ]
+    },
+    {
+      "type": "ability",
+      "data": [
+        {
+          "id": "ab_dc_masterofthehunger",
+          "name": "Master of the Hunger",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Voivode can never become Blood-Crazed, regardless of his Sated count."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_voivode_ascended",
+          "name": "Ascended (Voivode)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Ascended (3+ Sated), the Voivode's Melee Attacks gain +1 INJURY DICE, his Movement becomes 10\", and his personal Leash radius extends to 9\"."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_voivode_satedpowers",
+          "name": "Sated Powers",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "The Voivode may use one Sated Power per Activation:"
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Crimson Surge (2 Sated): until the end of his Activation, his Melee Attacks gain CLEAVE 2."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Knit the Flesh (X Sated): remove X BLOOD MARKERS, to a maximum of 2, from himself or a friendly vampire within 6\"."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Crack the Whip (1 Sated): choose a friendly Blood-Crazed model within 12\" and pick its Charge target this Activation."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_bloodsorcery",
+          "name": "Blood Sorcery",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "To cast a spell she pays its BLOOD MARKER cost from any models on the battlefield (friend or foe). She may Overcharge by additionally spending her own Sated, as noted per spell. Each time she casts, she gains 1 Sated."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_witch_ascended",
+          "name": "Ascended (Witch)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Ascended (3-4 Sated), her spell ranges increase by 6\", and each spell's BLOOD MARKER cost is reduced by 1 (minimum 1)."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_witch_redhour",
+          "name": "Blood-Crazed: The Red Hour",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Blood-Crazed (5-6 Sated), she cannot cast spells, loses DOMINION, and is compelled to charge as any Blood-Crazed model. At the end of her Activation, every model within 6\" (friend or foe) suffers an Injury Roll; then remove 1 Sated from her."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_witch_spells",
+          "name": "Spells",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Boiling Veins (pay 2 BLOOD MARKERS): an enemy within 6\" suffers an Injury Roll with +1 INJURY DICE. Overcharge: each Sated spent adds +1 INJURY DICE. If 3+ Sated are spent, place 1 BLOOD MARKER on the Witch."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Rise, Bleed Again (pay 1 BLOOD MARKER): a friendly vampire within 6\" stands up if Down, and you remove up to 2 BLOOD MARKERS from it. Overcharge: spend 1 Sated to also grant it 1 Sated."
+            },
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Drive the Hunt (pay 3 BLOOD MARKERS): a friendly Blood-Crazed model within 8\" of the Witch immediately makes a Charge ACTION and Fights; the Witch chooses its target. Overcharge: spend 1 Sated; if that Fight takes a model Out of Action, it makes one more Charge and Fight."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_deathshriek",
+          "name": "Deathshriek",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Innate Ranged Weapon (8\", ASSAULT, BLAST 2\"): after resolving the attack, place 1 BLOOD MARKER on each model in the blast."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_stalkersveil",
+          "name": "Stalker's Veil",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "-1 DICE to Ranged Attacks that target the Moroi."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_vanish",
+          "name": "Vanish (Hide ACTION)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While in contact with terrain at least 1/2\" high, the Moroi may take a Hide ACTION (Risky Success Roll, +1 DICE). On a Success or Critical Success, enemy models cannot choose the Moroi as the target of a Ranged Attack or Charge until she moves, charges, retreats, makes an attack, or an enemy model moves within 1.5\" of her. She can still be hit within the blast radius of a BLAST weapon."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_moroi_ascended",
+          "name": "Ascended (Moroi)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Ascended (3-4 Sated), she may take the Hide ACTION even when not in contact with terrain; and when she Charges, she may move through terrain and models at half the rolled Charge distance. If she cannot end this Charge in a legal position in base contact with the target, she instead ends as close to the target as possible and makes an Injury Roll against herself."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_moroi_crazed",
+          "name": "Blood-Crazed (Moroi)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Blood-Crazed (5-6 Sated), Blood-Crazed behaviour applies; she loses Deathshriek and Vanish, and her Melee Attacks gain +1 INJURY DICE."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_boyar_ascended",
+          "name": "Ascended (Boyar)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Ascended (3-4 Sated), Melee rises to +3 DICE and it gains FEAR, plus its Order's effect."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_boyar_crazed",
+          "name": "Blood-Crazed (Boyar)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Blood-Crazed (5-6 Sated), its Melee Attacks gain +1 INJURY DICE and Blood-Crazed behaviour applies."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_allure",
+          "name": "Allure",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Enemy models must treat all attacks against the Iele as Risky Success Rolls while within 6\" of her."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_beguile",
+          "name": "Beguile (ACTION)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Take a Risky Success Roll, +1 DICE. On a Success or Critical Success, choose an enemy model within 12\" and move it up to 6\" directly toward the Iele. It may be moved within 1\" of friendly models (not a charge), off objectives, or out of cover."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_thrall",
+          "name": "Thrall (ACTION)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Take a Risky Success Roll, +1 DICE. On a Success or Critical Success, choose an enemy within 12\" in Line of Sight; it makes a stripped activation under your control - either Move + one Ranged Attack, or Charge + one Melee Attack - and nothing else."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_iele_ascended",
+          "name": "Ascended (Iele)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Ascended (3-4 Sated), Beguile and Thrall may target enemies within 18\", and Allure extends to 9\"."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_iele_dance",
+          "name": "Blood-Crazed: The Maddening Dance",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "While Blood-Crazed (5-6 Sated), Blood-Crazed behaviour applies; she loses Beguile, Thrall, and DOMINION. At the end of her Activation, every other model within 12\" (friend and foe) is moved 4\" directly toward the Iele, stopping if it contacts another model, impassable terrain, or comes within 1\" of her."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_loosed",
+          "name": "Loosed",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Always treated as Blood-Crazed."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_killnotown",
+          "name": "The Kill Is Not Its Own",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "When the Shrike takes an enemy model Out of Action with a Melee Attack, a friendly ELITE VAMPIRE within 6\" may gain 1 Sated."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_tornnotslain",
+          "name": "Torn, Not Slain",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "When a Melee Attack made by the Shrike results in Down, place 1 additional BLOOD MARKER on the target."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_fromthedark",
+          "name": "From the Dark",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Instead of deploying normally, it may be held in reserve and enter from any board edge at the start of any of your Turns."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_rampage",
+          "name": "Rampage",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Each time it takes a model Out of Action with a Melee Attack, it must immediately make a Charge ACTION against the nearest model and Fight again - friend or foe. While within a friendly DOMINION model's Leash, it instead charges the nearest enemy. This continues while kills follow; it ends when a Fight fails to take a model Out of Action."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_borncrazed",
+          "name": "Born Crazed",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Deploys with 3 Sated (cap 6) and is always treated as Blood-Crazed."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_bloodburn",
+          "name": "Bloodburn",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "At the end of each of its Activations, remove 1 Sated."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_glutton",
+          "name": "Glutton",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Whenever a model is taken Out of Action within 6\" (friend or foe), gain 1 Sated."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_bloodletting",
+          "name": "Bloodletting",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "A friendly vampire within 3\" may target the Leech with its Feed ACTION: take the Risky roll as normal; on a Success, no BLOOD MARKER is placed - instead transfer 1 Sated from the Leech to the feeder."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_leech_gorged",
+          "name": "Gorged (2+ Sated)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Has FEAR, TOUGH, REGENERATE (2), and Transfixing Dread - enemy models within 6\" treat each 1\" of any move away from the Leech as 2\"."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_leech_starving",
+          "name": "Starving (0-1 Sated)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Loses FEAR, Transfixing Dread, and TOUGH; REGENERATE drops to (1)."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_erraticflight",
+          "name": "Erratic Flight",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "-1 DICE to Ranged Attacks that target a Strix."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_cattle",
+          "name": "Cattle",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "When a Bled is taken Out of Action by an enemy, a friendly vampire within 3\" may immediately gain 1 Sated."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_offerthevein",
+          "name": "Offer the Vein",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "A friendly vampire within 1\" of a Bled may take a Feed ACTION on it, adding +1 DICE to the Risky Success Roll, and make an Injury Roll against the Bled. The vampire gains its Sated as normal; the Bled suffers the injury and may be taken Out of Action."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_stanchthevein",
+          "name": "Stanch the Vein",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Once per Turn, when a friendly VAMPIRE resolves a Feed ACTION or Offer the Vein against a friendly Bled within 3\", the Bled suffers no Injury Roll and gains no BLOOD MARKER."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_anexactscience",
+          "name": "An Exact Science",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "+1 DICE to the Risky Success Roll for a Treat ACTION carried out by the Vein-Wife."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_thecircle",
+          "name": "The Circle",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "While not Down, a Calusar counts as 3 models for the purposes of controlling Objectives."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_unmoved",
+          "name": "Unmoved",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A Calusar cannot be moved by any rule other than its own Activation."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_thedance",
+          "name": "The Dance (ACTION)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Take a Risky Success Roll. On a Failure the Calusar's Activation ends. On a Success or Critical Success, remove 2 Sated from a friendly VAMPIRE within 3\"."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_therainbook",
+          "name": "The Rain-Book (ACTION)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "Take a Risky Success Roll. On a Failure the Solomonar's Activation ends. On a Success pick one of the following; on a Critical Success pick one or both. The effect lasts until the start of his next Activation. Hail: -1 DICE to all Ranged Attacks made by any model. Mountain Fog: no model may be targeted by a Ranged Attack made from more than 12\" away."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_mistofthepasses",
+          "name": "Mist of the Passes",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "-1 DICE to Ranged Attacks that target the Solomonar."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_rendingclaws",
+          "name": "Rending Claws",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "A Priculici can make a Melee Attack with IGNORE ARMOUR even though it has no Melee Weapon."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_prisetheshell",
+          "name": "Prise the Shell",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "+1 INJURY DICE to Melee Attacks made by a Priculici if the target has the ARTIFICIAL keyword or has a piece of Armour Battlekit."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_sworntotheblood",
+          "name": "Sworn to the Blood",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "When you recruit a Priculici, before adding it to your roster, you can say it will form a FIRETEAM with 1 other model in your Warband. Both models gain the FIRETEAM keyword. This Fireteam is in addition to any other Fireteams your Warband can have."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_themastersdebt",
+          "name": "The Master's Debt",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "When the Priculici's Fireteam partner is taken Out of Action, the Priculici becomes Blood-Crazed for the rest of the game. While Blood-Crazed its Melee Attacks gain +1 INJURY DICE, it may take no ACTION other than Move, Dash, Charge or Fight, and it must Charge the model that took its partner Out of Action if able, or the nearest enemy model if it cannot."
+            }
+          ],
+          "options": []
+        },
+        {
+          "id": "ab_dc_mercpotential",
+          "name": "Limited Potential",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "paragraph"
+              },
+              "content": "This model cannot have more than 7 Experience Points."
+            }
+          ],
+          "options": []
+        }
+      ]
+    },
+    {
+      "type": "model",
+      "data": [
+        {
+          "id": "md_dragoncourt_voivode",
+          "name": "The Voivode",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "special_category_upgrades": {
+              "upgrades": [
+                {
+                  "category": "bloodline",
+                  "count": 1
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 2
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Voivode may take any Battlekit from the Court Armoury and may take a Pistol."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "The first knight of the Order to drink, and the last to repent. Lesser things do not disobey when he is near."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 7,
+            "melee": 3,
+            "ranged": 1,
+            "base": [
+              40
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_elite",
+            "kw_leader",
+            "kw_fear",
+            "kw_tough",
+            "kw_strong",
+            "kw_feed",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_masterofthehunger",
+            "ab_dc_voivode_ascended",
+            "ab_dc_voivode_satedpowers"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_strigoiwitch",
+          "name": "The Strigoi Witch",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "special_category_upgrades": {
+              "upgrades": [
+                {
+                  "category": "bloodline",
+                  "count": 1
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 1
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Strigoi Witch may take any Battlekit from the Court Armoury."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "She rules by knowing whose veins answer when she calls."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": 0,
+            "ranged": 0,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_elite",
+            "kw_fear",
+            "kw_feed",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_bloodsorcery",
+            "ab_dc_witch_ascended",
+            "ab_dc_witch_redhour",
+            "ab_dc_witch_spells"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_moroi",
+          "name": "The Moroi",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "special_category_upgrades": {
+              "upgrades": [
+                {
+                  "category": "bloodline",
+                  "count": 1
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 1
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Moroi may take any Battlekit from the Court Armoury."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "A higher vampire who hunts alone - heard before she is seen, and rarely seen at all."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 7,
+            "melee": 2,
+            "ranged": 2,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_elite",
+            "kw_infiltrator",
+            "kw_fear",
+            "kw_feed",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_deathshriek",
+            "ab_dc_stalkersveil",
+            "ab_dc_vanish",
+            "ab_dc_moroi_ascended",
+            "ab_dc_moroi_crazed"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_boyar",
+          "name": "The Boyar",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "special_category_upgrades": {
+              "upgrades": [
+                {
+                  "category": "bloodline",
+                  "count": 1
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 1
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Boyar may take any Battlekit from the Court Armoury. It must be recruited with one Order."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "A knight of the Order of the Dragon, armored and ancient."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": 2,
+            "ranged": 0,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_elite",
+            "kw_strong",
+            "kw_feed",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_boyar_ascended",
+            "ab_dc_boyar_crazed"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_iele",
+          "name": "The Iele",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "special_category_upgrades": {
+              "upgrades": [
+                {
+                  "category": "bloodline",
+                  "count": 1
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 1
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Iele may take any Battlekit from the Court Armoury."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "She has never lifted a blade. She does not need to - the enemy will do it for her."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": -1,
+            "ranged": 0,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_elite",
+            "kw_fear",
+            "kw_feed",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_allure",
+            "ab_dc_beguile",
+            "ab_dc_thrall",
+            "ab_dc_iele_ascended",
+            "ab_dc_iele_dance"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_shrike",
+          "name": "The Shrike",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "model_equipment_restriction": {
+              "removed": [
+                {
+                  "category": "equipment",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "ranged",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "grenade",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "armour",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "shield",
+                  "res_type": "all",
+                  "value": ""
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 1
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Shrike has no Battlekit. Its Melee Attacks have CLEAVE 2."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "Not sent, but released; it does not stop while anything nearby still moves."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 8,
+            "melee": 2,
+            "ranged": 0,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 1
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_infiltrator",
+            "kw_fear",
+            "kw_strong",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_loosed",
+            "ab_dc_killnotown",
+            "ab_dc_tornnotslain",
+            "ab_dc_fromthedark",
+            "ab_dc_rampage"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_leech",
+          "name": "The Leech",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "regenerate_mod": {
+              "value": 2
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Leech may take any Battlekit from the Court Armoury."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "A wall that bleeds for others."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 5,
+            "melee": 1,
+            "ranged": 0,
+            "base": [
+              40
+            ],
+            "armour": -1,
+            "movetype": 0,
+            "potential": 1
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_fear",
+            "kw_tough",
+            "kw_strong",
+            "kw_vampire"
+          ],
+          "abilities": [
+            "ab_dc_borncrazed",
+            "ab_dc_bloodburn",
+            "ab_dc_glutton",
+            "ab_dc_bloodletting",
+            "ab_dc_leech_gorged",
+            "ab_dc_leech_starving"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_strix",
+          "name": "The Strix",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "description": [],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "A leather-winged thing loosed at the enemy's rear."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 10,
+            "melee": 0,
+            "ranged": 0,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 1,
+            "potential": 2
+          },
+          "keywords": [
+            "kw_dragoncourt",
+            "kw_flying"
+          ],
+          "abilities": [
+            "ab_dc_erraticflight"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_bled",
+          "name": "The Bled",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": [],
+          "description": [],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "Walking blood-flasks the Court drives to war."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": -1,
+            "ranged": 0,
+            "base": [
+              25
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 2
+          },
+          "keywords": [
+            "kw_dragoncourt"
+          ],
+          "abilities": [
+            "ab_dc_cattle",
+            "ab_dc_offerthevein"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_veinwife",
+          "name": "The Vein-Wife",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "model_equipment_restriction": {
+              "removed": [
+                {
+                  "category": "equipment",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "melee",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "ranged",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "grenade",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "armour",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "shield",
+                  "res_type": "all",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Vein-Wife has Standard Armour, a Gas Mask, a Medi-kit and a Culling Knife."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "She knows exactly how much a body can give and still stand at the plough."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": 0,
+            "ranged": 0,
+            "base": [
+              25
+            ],
+            "armour": -1,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_negate"
+          ],
+          "abilities": [
+            "ab_dc_stanchthevein",
+            "ab_dc_anexactscience",
+            "ab_dc_mercpotential"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_calusar",
+          "name": "The Calusar",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "model_equipment_restriction": {
+              "removed": [
+                {
+                  "category": "equipment",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "melee",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "ranged",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "grenade",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "armour",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "shield",
+                  "res_type": "all",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Calusar has a Trench Club (the ritual staff) and a Sword/Axe (the wooden sword, iron-shod)."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "He does not consider himself a mercenary. He is a physician."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": 1,
+            "ranged": 0,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_negate",
+            "kw_tough"
+          ],
+          "abilities": [
+            "ab_dc_thecircle",
+            "ab_dc_unmoved",
+            "ab_dc_thedance",
+            "ab_dc_mercpotential"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_solomonar",
+          "name": "The Solomonar",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "model_equipment_restriction": {
+              "removed": [
+                {
+                  "category": "equipment",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "melee",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "ranged",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "grenade",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "armour",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "shield",
+                  "res_type": "all",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "The Solomonar has a Polearm - an iron-shod weather-staff."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "Ten scholars enter the Scholomance; nine walk out. He paid, and owes nothing to anyone since."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 6,
+            "melee": 0,
+            "ranged": 1,
+            "base": [
+              32
+            ],
+            "armour": 0,
+            "movetype": 0,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_negate"
+          ],
+          "abilities": [
+            "ab_dc_therainbook",
+            "ab_dc_mistofthepasses",
+            "ab_dc_mercpotential"
+          ]
+        },
+        {
+          "id": "md_dragoncourt_priculici",
+          "name": "The Priculici",
+          "source": "homebrew",
+          "tags": [],
+          "contextdata": {
+            "model_equipment_restriction": {
+              "removed": [
+                {
+                  "category": "equipment",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "melee",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "ranged",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "grenade",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "armour",
+                  "res_type": "all",
+                  "value": ""
+                },
+                {
+                  "category": "shield",
+                  "res_type": "all",
+                  "value": ""
+                }
+              ]
+            },
+            "regenerate_mod": {
+              "value": 1
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "A Priculici cannot have any Battlekit."
+            }
+          ],
+          "lore": [
+            {
+              "tags": {
+                "desc_type": "italic"
+              },
+              "content": "Some the blood took further down, until the man was gone and only the appetite and the wings remained."
+            }
+          ],
+          "team": "none",
+          "stats": {
+            "movement": 10,
+            "melee": 2,
+            "ranged": 0,
+            "base": [
+              40
+            ],
+            "armour": 0,
+            "movetype": 1,
+            "potential": 0
+          },
+          "keywords": [
+            "kw_fear",
+            "kw_flying",
+            "kw_fireteam"
+          ],
+          "abilities": [
+            "ab_dc_rendingclaws",
+            "ab_dc_prisetheshell",
+            "ab_dc_sworntotheblood",
+            "ab_dc_themastersdebt",
+            "ab_dc_mercpotential"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "factionmodelrelationship",
+      "data": [
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_voivode",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_voivode",
+          "captain": true,
+          "mercenary": false,
+          "cost": 160,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 1,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_strigoiwitch",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_strigoiwitch",
+          "captain": false,
+          "mercenary": false,
+          "cost": 110,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_moroi",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_moroi",
+          "captain": false,
+          "mercenary": false,
+          "cost": 110,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_boyar",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_boyar",
+          "captain": false,
+          "mercenary": false,
+          "cost": 65,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": -1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_iele",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_iele",
+          "captain": false,
+          "mercenary": false,
+          "cost": 100,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_shrike",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_shrike",
+          "captain": false,
+          "mercenary": false,
+          "cost": 70,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 4
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_leech",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_leech",
+          "captain": false,
+          "mercenary": false,
+          "cost": 65,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": -1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_strix",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_strix",
+          "captain": false,
+          "mercenary": false,
+          "cost": 25,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": -1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_bled",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_bled",
+          "captain": false,
+          "mercenary": false,
+          "cost": 12,
+          "cost_type": 0,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": -1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_veinwife",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_veinwife",
+          "captain": false,
+          "mercenary": true,
+          "cost": 3,
+          "cost_type": 1,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_calusar",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_calusar",
+          "captain": false,
+          "mercenary": true,
+          "cost": 5,
+          "cost_type": 1,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_solomonar",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_solomonar",
+          "captain": false,
+          "mercenary": true,
+          "cost": 6,
+          "cost_type": 1,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_md_dragoncourt_priculici",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": {
+            "option_search_viable": []
+          },
+          "options": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "model_id": "md_dragoncourt_priculici",
+          "captain": false,
+          "mercenary": true,
+          "cost": 6,
+          "cost_type": 1,
+          "restricted_models": [],
+          "warband_minimum": 0,
+          "warband_maximum": 1
+        }
+      ]
+    },
+    {
+      "type": "upgrade",
+      "data": [
+        {
+          "id": "up_dc_order_anchor",
+          "name": "Order: Anchor (Deathless)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Ascended adds TOUGH, and REGENERATE rises to (2). Its armour and shield are purchased separately from the Armoury."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_order_butcher",
+          "name": "Order: Butcher",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Ascended: its melee weapon gains CLEAVE 2 and its Melee Attacks gain +1 DICE."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_order_feeder",
+          "name": "Order: Feeder",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Ascended: when it takes an enemy Out of Action with a Melee Attack, a friendly vampire within 6\" gains 1 Sated."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_order_hunt",
+          "name": "Order: Hunt (the Huntsman)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Ranged becomes +2 DICE. Ascended: its Ranged Attacks gain IGNORE LONG RANGE and its Ranged Weapons count as having ASSAULT, regardless of weapon carried."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_knightcaptain",
+          "name": "Knight-Captain",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "contextdata": {
+            "keyword_add": {
+              "value": [
+                "kw_dominion"
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Any Order. This Boyar gains the DOMINION keyword."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_eb_gluttonforblood",
+          "name": "Elder Blood: Glutton for Blood (Mara) (Provisional)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "special_category": "bloodline",
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Its Feed ACTION grants 2 Sated instead of 1."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_eb_crownofdread",
+          "name": "Elder Blood: Crown of Dread (Negru Voda) (Provisional)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "special_category": "bloodline",
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "-1 DICE to all Success Rolls for enemy models within 6\". A model cannot suffer this penalty from more than one Crown of Dread."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        },
+        {
+          "id": "up_dc_eb_unhallowedflesh",
+          "name": "Elder Blood: Unhallowed Flesh (Cazimir) (Provisional)",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "special_category": "bloodline",
+            "homebrew_id": 470028
+          },
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Permanent -1 INJURY MODIFIER (stacks with worn armour)."
+            }
+          ],
+          "options": [],
+          "keywords": [],
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "type": "modelupgraderelationship",
+      "data": [
+        {
+          "id": "rel_dragoncourt_up_dc_order_anchor",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_boyar"
+          ],
+          "upgrade_id": "up_dc_order_anchor",
+          "cost": 25,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_order_butcher",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_boyar"
+          ],
+          "upgrade_id": "up_dc_order_butcher",
+          "cost": 40,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_order_feeder",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_boyar"
+          ],
+          "upgrade_id": "up_dc_order_feeder",
+          "cost": 20,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_order_hunt",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_boyar"
+          ],
+          "upgrade_id": "up_dc_order_hunt",
+          "cost": 30,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_knightcaptain",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_boyar"
+          ],
+          "upgrade_id": "up_dc_knightcaptain",
+          "cost": 20,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_eb_gluttonforblood",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_voivode",
+            "md_dragoncourt_strigoiwitch",
+            "md_dragoncourt_moroi",
+            "md_dragoncourt_boyar",
+            "md_dragoncourt_iele"
+          ],
+          "upgrade_id": "up_dc_eb_gluttonforblood",
+          "cost": 25,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_eb_crownofdread",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_voivode",
+            "md_dragoncourt_strigoiwitch",
+            "md_dragoncourt_moroi",
+            "md_dragoncourt_boyar",
+            "md_dragoncourt_iele"
+          ],
+          "upgrade_id": "up_dc_eb_crownofdread",
+          "cost": 25,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        },
+        {
+          "id": "rel_dragoncourt_up_dc_eb_unhallowedflesh",
+          "source": "homebrew",
+          "tags": [],
+          "name": "",
+          "contextdata": [],
+          "options": [],
+          "model_id_set": [
+            "md_dragoncourt_voivode",
+            "md_dragoncourt_strigoiwitch",
+            "md_dragoncourt_moroi",
+            "md_dragoncourt_boyar",
+            "md_dragoncourt_iele"
+          ],
+          "upgrade_id": "up_dc_eb_unhallowedflesh",
+          "cost": 25,
+          "cost_type": 0,
+          "restricted_upgrades": [],
+          "warband_limit": 0,
+          "required_upgrades": []
+        }
+      ]
+    },
+    {
+      "type": "equipment",
+      "data": [
+        {
+          "id": "eq_dc_wheellockculverin",
+          "name": "Wheellock Culverin",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 8,
+          "stats": {
+            "hands_ranged": 1,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed, 8\". Thunderous: +1 INJURY DICE against targets within 4\"."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_assault",
+            "kw_hb470028_thunderous"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_thearcan",
+          "name": "The Arcan",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 8,
+          "stats": {
+            "hands_ranged": 1,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed, Thrown, 8\". Snared: makes no Injury Roll. On a successful hit, the target may not Dash or Charge until the end of its next Activation."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_assault",
+            "kw_hb470028_snared"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_sanguinearquebus",
+          "name": "Sanguine Arquebus",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 18,
+          "stats": {
+            "hands_ranged": 2,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed, 18\", CUMBERSOME. Bleeding Shot: place 1 additional BLOOD MARKER on any model wounded by this weapon."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_cumbersome",
+            "kw_hb470028_bleedingshot"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_veinseekerrifle",
+          "name": "Vein-Seeker Rifle",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 30,
+          "stats": {
+            "hands_ranged": 2,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed, 30\", HEAVY. ELITE only. Hungry Rounds: place 1 extra BLOOD MARKER on a wounded target, and a friendly vampire within 6\" of that target may immediately take a Feed ACTION against it as if in contact."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_heavy",
+            "kw_hb470028_hungryrounds"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_organgun",
+          "name": "Organ Gun",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 30,
+          "stats": {
+            "hands_ranged": 2,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "automatic_mod": {
+              "val": [
+                3
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed, 30\", AUTOMATIC 3, HEAVY, RELOAD, CUMBERSOME. A rack of musket barrels fired in a single volley; a fixed battery, not a mobile gun."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_heavy",
+            "kw_reload",
+            "kw_cumbersome"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_bombard",
+          "name": "Bombard",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "grenade",
+          "distance": 36,
+          "stats": {
+            "hands_ranged": 2,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "blast_mod": {
+              "modifiers": [
+                3
+              ]
+            },
+            "injury_dice_mod": {
+              "modifiers": [
+                1
+              ]
+            },
+            "ignore_mod": {
+              "modifiers": [
+                "cover"
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed, Indirect, RISKY. Uses the Trench Mortar profile; on a failed Success Roll, place 1 BLOOD MARKER next to the firer as the crude charge misfires."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_heavy",
+            "kw_scatter",
+            "kw_riskyaction"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_draconistsabre",
+          "name": "Draconist Sabre",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed Melee. Highborn Edge: while the wielder is Ascended, this weapon gains CLEAVE 2."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_highbornedge"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_widowsknives",
+          "name": "Widow's Knives",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "plus_dice": {
+              "val": [
+                1
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Paired 1-Handed Melee. Waltz of Knives: +1 DICE to the wielder's Melee Attacks; may not carry a Shield. After resolving its Melee Attacks, the wielder may move up to 2\"; this move does not count as Retreating."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_waltzofknives"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_graveironhalberd",
+          "name": "Grave-Iron Halberd",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 2,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed Melee, Polearm. Set to Receive: enemies gain no bonus DICE for Charging the wielder. If the wielder did not move this Activation, its Melee Attacks against a model that Charged it this Turn gain +1 INJURY DICE."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_settoreceive"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_bloodblade",
+          "name": "Blood-Blade",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed Melee. Thirst: the first time this weapon wounds a model each Activation, the wielder gains 1 Sated."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_thirst"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_impalersstake",
+          "name": "Impaler's Stake",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 2,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed Melee, BLOCK. The Impaling: when this weapon takes an enemy Out of Action, you may place a permanent Impaled Marker where it stood, then this weapon is lost for the rest of the game. The area within 3\" of an Impaled Marker is Difficult terrain for non-DRAGON COURT models."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_block",
+            "kw_hb470028_theimpaling"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_sanguinereaver",
+          "name": "Sanguine Reaver",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 2,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed Melee, DEADLY. Voivode only. The Reaver Drinks Deep: each time this weapon takes a model Out of Action, the wielder gains 1 Sated."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_deadly",
+            "kw_hb470028_reaverdrinks"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_coffinlidpavise",
+          "name": "Coffin-Lid Pavise",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "shield",
+          "distance": null,
+          "stats": [],
+          "contextdata": {
+            "upgrade_stat": {
+              "upgrades": [
+                {
+                  "stat": "armour",
+                  "value": -1
+                }
+              ]
+            },
+            "injury_flat_mod": {
+              "modifiers": [
+                -1
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Shield Combo. As a Trench Shield; in addition, Ranged Attacks against the bearer from more than 12\" away suffer -1 DICE."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_shieldcombo"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_gravesoilplate",
+          "name": "Grave-Soil Plate",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "armour",
+          "distance": null,
+          "stats": [],
+          "contextdata": {
+            "upgrade_stat": {
+              "upgrades": [
+                {
+                  "stat": "armour",
+                  "value": -1
+                }
+              ]
+            },
+            "injury_flat_mod": {
+              "modifiers": [
+                -1
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "ELITE VAMPIRE only, Limit 1 per Warband. Counts as Standard Armour. Interred: while the wearer has 1 or more BLOOD MARKERS, Injury Rolls against the wearer suffer an additional -1 INJURY MODIFIER."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_interred"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_shroudofthebled",
+          "name": "Shroud of the Bled",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "armour",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Grants no INJURY MODIFIER. Pauper's Ward: the first time each game the wearer would be taken Out of Action by a Ranged Attack, it is Down instead."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_paupersward"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_coffinofgravesoil",
+          "name": "Coffin of Grave-Soil",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Buried Advance: instead of deploying normally, this model is held in reserve and enters from any friendly board edge at the start of any of your first two Turns."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_vialofstolenblood",
+          "name": "Vial of Stolen Blood",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Consumable. Once per game, from your second Turn onward, a vampire that drinks it gains 1 Sated."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_consumable"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_herdbell",
+          "name": "Herd-Bell",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Limit 1. A cracked bellwether's bell; the herd has stopped noticing which of them is wearing it. Driven Together: while a friendly Bled is within 6\" of a model with a Herd-Bell, the range of its Cattle rule is 6\" instead of 3\"."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_driventogether"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_copyoftheusages",
+          "name": "A Copy of the Usages",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "DOMINION only. The Order's law, copied in a hand that never shook. The bearer's Leash range increases by 2\"."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_pouchofgraveearth",
+          "name": "Pouch of Grave-Earth",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Consumable. A fistful of home soil pressed into the wound. Once per game, at the end of the bearer's Activation, the bearer removes up to 2 additional BLOOD MARKERS."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_consumable"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_shrikeclaws",
+          "name": "Shrike Claws",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 0,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "cleave_mod": {
+              "modifiers": [
+                2
+              ]
+            },
+            "unremovable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Innate. The Shrike fights with natural claws and can carry no other Battlekit."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_deathshriek",
+          "name": "Deathshriek",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 8,
+          "stats": {
+            "hands_ranged": 0,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "blast_mod": {
+              "modifiers": [
+                2
+              ]
+            },
+            "unremovable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Innate. After resolving the attack, place 1 BLOOD MARKER on each model in the blast.",
+              "glossary": [
+                {
+                  "val": "BLOOD MARKER",
+                  "id": "kw_bloodmarker"
+                },
+                {
+                  "val": "👑",
+                  "id": "CUR_DUC"
+                },
+                {
+                  "val": "☼",
+                  "id": "CUR_GLR"
+                },
+                {
+                  "val": "🏅",
+                  "id": "SYM_VPS"
+                },
+                {
+                  "val": "🎲",
+                  "id": "SYM_DCE"
+                },
+                {
+                  "val": "🗺",
+                  "id": "SYM_RSC"
+                },
+                {
+                  "val": "👁",
+                  "id": "SYM_FVR"
+                },
+                {
+                  "val": "🏺",
+                  "id": "SYM_RLC"
+                },
+                {
+                  "val": "📦",
+                  "id": "SYM_SPL"
+                },
+                {
+                  "val": "🌍",
+                  "id": "SYM_TRT"
+                },
+                {
+                  "val": "🌈",
+                  "id": "SYM_ANY"
+                },
+                {
+                  "val": "💰",
+                  "id": "SYM_DPT"
+                },
+                {
+                  "val": "⛫",
+                  "id": "SYM_GRS"
+                },
+                {
+                  "val": "🛐",
+                  "id": "SYM_SHR"
+                },
+                {
+                  "val": "🏦",
+                  "id": "SYM_VLT"
+                }
+              ]
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_assault"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_gravedampsprayer",
+          "name": "Grave-Damp Sprayer",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "ranged",
+          "distance": 8,
+          "stats": {
+            "hands_ranged": 2,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "injury_dice_mod": {
+              "modifiers": [
+                -1
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "2-Handed, 8\", -1 INJURY DICE, FLAMETHROWER, GAS. A brass pump and a bladder of tomb air drawn off the deep vaults; it does not burn, it simply is not breathable. Choke-Damp: a Ranged Attack made with a Grave-Damp Sprayer may target a friendly model."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_flamethrower",
+            "kw_gas",
+            "kw_hb470028_chokedamp"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_carlig",
+          "name": "Carlig",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed Melee. A flesh-hook on a short chain; it is not for killing. The Hook Holds: when an enemy model within 1\" of a model with a Carlig takes a Retreat ACTION, place 1 BLOOD MARKER next to that enemy model before any Melee Attacks allowed by the retreat are resolved."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_hookholds"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_gravesickle",
+          "name": "Grave-Sickle",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed Melee. The sickle laid at a strigoi's throat before the lid goes down. Laid at the Throat: +1 INJURY DICE against a model that has 1 or more BLOOD MARKERS."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_laidatthethroat"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_buzdugan",
+          "name": "Buzdugan",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "injury_flat_mod": {
+              "modifiers": [
+                1
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "1-Handed Melee, BLOCK, +1 INJURY MODIFIER. The voivode's mace of office, unchanged since it was a symbol rather than a tool."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_block"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_graveiron",
+          "name": "Grave-Iron",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "armour",
+          "distance": null,
+          "stats": [],
+          "contextdata": {
+            "upgrade_stat": {
+              "upgrades": [
+                {
+                  "stat": "armour",
+                  "value": -1
+                }
+              ]
+            },
+            "injury_flat_mod": {
+              "modifiers": [
+                -1
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Mail buried nine winters and dug up rusted shut. Counts as Standard Armour. Nine Winters Buried: increases the wearer's REGENERATE by 1, to a maximum of REGENERATE (2). The wearer's Movement is reduced by 1\"."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_ninewinters"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_censerofgravesoil",
+          "name": "Censer of Grave-Soil",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Limit 2. Earth from nine graves burned with myrrh in a pierced brass ball; the dead find it comforting, the living cannot breathe it. Grave-Smoke: at the end of this model's Activation, place 1 BLOOD MARKER on 1 enemy model within 8\"."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_gravesmoke"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_yokeoftheherd",
+          "name": "Yoke of the Herd",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Leech only. A Bled chained at the shoulder, walking where it is walked. Chained at the Shoulder: at the start of each of the Leech's Activations, if a friendly Bled is within 2\", you may make an Injury Roll against that Bled. If you do, the Leech gains 1 Sated."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_hb470028_chainedatshoulder"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_cullingknife",
+          "name": "Culling Knife",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "unremovable": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "Counts as a Misericordia."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_critical"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_greybrothers",
+          "name": "The Grey Brothers",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. Limit 1. Uses the Trench Dog rules in full - 25mm base, 8\"/Infantry, Melee +0 DICE, Armour 0 - including Four Paws, Pack Loyalty (it gains DRAGON COURT), Teeth and Claws, The Dogs of War, and Loyal Hound (+1 Glory for FIRETEAM). Not of the Herd: a vampire that takes a Feed ACTION against a Grey Brother must make an Injury Roll against it, as Offer the Vein. Special Training (+1 Glory) - Sentinel of the Tree Line: enemy models may not use INFILTRATOR to deploy within 12\" of the Grey Brother."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_deployable"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_hailstonephial",
+          "name": "Hailstone Phial",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "grenade",
+          "distance": 8,
+          "stats": {
+            "hands_ranged": 1,
+            "ranged": true
+          },
+          "contextdata": {
+            "get_weapon": [],
+            "blast_mod": {
+              "modifiers": [
+                3
+              ]
+            },
+            "injury_dice_mod": {
+              "modifiers": [
+                -1
+              ]
+            },
+            "ignore_mod": {
+              "modifiers": [
+                "cover"
+              ]
+            }
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. Consumable, Limit 2. 8\", ASSAULT, BLAST 3\", -1 INJURY DICE, IGNORE COVER, SCATTER. A finger of ice hewn from the frozen lake above the clouds, sealed in lead and wax; it does not melt. Hewn from the Frozen Lake: after the attack has been resolved, the area within 3\" of the target point is treated as Difficult terrain until the end of the following Turn. This affects all models, friend and foe."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_assault",
+            "kw_blast",
+            "kw_scatter",
+            "kw_consumable",
+            "kw_hb470028_hewnfrozenlake"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_caskcart",
+          "name": "The Cask Cart",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. Limit 1. A herd drunk dry yields one night's strength; a herd kept yields a cellar. The Tithe, Not the Slaughter: a Cask Cart is not allocated to a model; add it to your Arsenal. At the end of each game, for each friendly Bled that is on the battlefield and has 1 or more BLOOD MARKERS, your Warband gains 1 Vintage, to a maximum of 3 Vintage per game. See Campaign Play: The Long Hunger."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_gravenail",
+          "name": "The Grave-Nail",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "melee",
+          "distance": null,
+          "stats": {
+            "hands_melee": 1,
+            "melee": true
+          },
+          "contextdata": {
+            "get_weapon": []
+          },
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. 1-Handed Melee, ARMOUR PIERCING. Gravediggers hammer a square iron nail through the skull before the lid goes down, so that what is in the box stays in the box. Drawn out and set into a haft, it keeps the only trick it ever knew."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_armourpiercing"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_cupoftargoviste",
+          "name": "The Cup of Targoviste",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. VAMPIRE only, Limit 1. Represented by a model or marker on a 25mm base. What is in it is not water. Set Out at the Fountain: after you deploy the model that has the Cup, you may also deploy the Cup anywhere on the battlefield more than 6\" from any enemy model; that model is then no longer carrying it, and the Cup cannot be moved, attacked or removed for the rest of the game. Drink ACTION: any model, friend or foe, within 1\" of the Cup may take a Drink ACTION, removing 1 BLOOD MARKER from it, or 2 BLOOD MARKERS if it is an enemy model; once per game per model. The Debt of Hospitality: if the model taking the Drink ACTION is an enemy model, the closest friendly model with the VAMPIRE keyword gains 1 Sated."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_deployable"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_draconistcollar",
+          "name": "Draconist Collar",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. ELITE only, Limit 3. The red cross that lay across their backs has been ground off with a file - not prised away, not lost, filed. The Oath Half-Kept: a model with a Draconist Collar may take a Feed ACTION against a model that has 1 or more BLESSING MARKERS, despite The Sanctified. If the Feed ACTION is a Success or Critical Success, remove 1 BLESSING MARKER from the target and place it next to the feeding model. Grace Does Not Keep: at the end of each Turn, remove all BLESSING MARKERS from models with the DRAGON COURT keyword."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_forestoftheimpaled",
+          "name": "The Forest of the Impaled",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. Limit 1. The Order learned in 1462 that an army can be turned without being fought. The Practice: not allocated to a model; add it to your Arsenal. After both sides have deployed, place 2 Impaled Markers anywhere on the battlefield more than 12\" from any enemy model. What the Sultan Saw: an enemy model within 3\" of an Impaled Marker must treat all of its Success Rolls as Risky Success Rolls. This does not apply to Morale Checks."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_nightglasssight",
+          "name": "Nightglass Sight",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. VAMPIRE only, Limit 2. Smoked crystal ground in the cellars of the Scholomance; the lens does nothing a mortal could measure, it simply stops the dark from being far away. Cold Sight: when this Glory Item is given to a model, choose 1 Ranged Weapon that the model has and which does not have the AUTOMATIC or BLAST keyword. That Weapon gains the IGNORE LONG RANGE keyword. A Nightglass Sight cannot be reallocated during the Quartermaster Step."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_rookery",
+          "name": "The Rookery",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. Limit 1. A wicker loft strapped to the baggage wagon; what lives in it is not tame and is not fed enough to leave. The Loft Is Never Empty: not allocated to a model; add it to your Arsenal. In each game you may deploy 1 Strix in addition to the models in your Warband. It does not count towards your Warband's model count, Threshold Value or Field Strength, and is not counted as part of your Warband for Morale Checks. If it is taken Out of Action, do not roll for its survival - it is replaced free of charge before your next game."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_thirstingrounds",
+          "name": "Thirsting Rounds",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. VAMPIRE only, Limit 1. AMMUNITION. A chipped fang set in the mould and the lead poured around it; the tooth does the work wherever the ball lands. Drink at Distance: the first time in each Activation that a Ranged Attack made with the chosen Weapon wounds a model, the firing model gains 1 Sated. This does not happen if the target has 1 or more BLESSING MARKERS or has the ARTIFICIAL keyword."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_ammunition"
+          ],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_vesperbell",
+          "name": "The Vesper Bell",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. VAMPIRE only, Limit 1. Cast to call a congregation in at dusk; filed of its cross, it still does - the Order only changed which one. Ring for Evensong ACTION: take a Risky Success Roll and add +1 DICE. On a Failure nothing happens and the model's Activation ends. On a Success or Critical Success, choose 1 enemy model within 12\" in Line of Sight; for the rest of the game, attacks made against that model by friendly models have the IGNORE ARMOUR keyword. Once successfully used, it may not be used again in the same game."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [],
+          "modifiers": [],
+          "abilities": []
+        },
+        {
+          "id": "eq_dc_buciumofthepass",
+          "name": "The Bucium of the Pass",
+          "source": "homebrew",
+          "tags": {
+            "trait": true,
+            "homebrew_id": 470028
+          },
+          "category": "equipment",
+          "distance": null,
+          "stats": [],
+          "contextdata": [],
+          "description": [
+            {
+              "tags": {
+                "desc_type": "default"
+              },
+              "content": "GLORY ITEM. DOMINION only, Limit 1. HELD. Four feet of fir wound in cherry bark, made to call a flock down off the mountain before weather; it still does that, but the flock is different. Sound the Recall ACTION: take a Risky Success Roll and add +1 DICE. On a Failure nothing happens and the model's Activation ends. On a Success or Critical Success, until the end of the Turn, friendly Blood-Crazed models within 18\" of the bearer are not compelled to take a Charge ACTION and may take any ACTION."
+            }
+          ],
+          "lore": [],
+          "options": [],
+          "keywords": [
+            "kw_held"
+          ],
+          "modifiers": [],
+          "abilities": []
+        }
+      ]
+    },
+    {
+      "type": "factionequipmentrelationship",
+      "data": [
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_wheellockculverin",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Wheellock Culverin",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_wheellockculverin",
+          "cost": 7,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_thearcan",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Arcan",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_thearcan",
+          "cost": 8,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_sanguinearquebus",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Sanguine Arquebus",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_sanguinearquebus",
+          "cost": 12,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_veinseekerrifle",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Vein-Seeker Rifle",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_elite"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_veinseekerrifle",
+          "cost": 25,
+          "costtype": 0,
+          "limit": 3
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_organgun",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Organ Gun",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_organgun",
+          "cost": 50,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_bombard",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Bombard",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_bombard",
+          "cost": 40,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_draconistsabre",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Draconist Sabre",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_draconistsabre",
+          "cost": 8,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_widowsknives",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Widow's Knives",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_widowsknives",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_graveironhalberd",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Grave-Iron Halberd",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_graveironhalberd",
+          "cost": 9,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_bloodblade",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Blood-Blade",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_bloodblade",
+          "cost": 12,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_impalersstake",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Impaler's Stake",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_impalersstake",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 3
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_sanguinereaver",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Sanguine Reaver",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "id",
+                  "value": "md_dragoncourt_voivode"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_sanguinereaver",
+          "cost": 40,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_coffinlidpavise",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Coffin-Lid Pavise",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_coffinlidpavise",
+          "cost": 12,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_gravesoilplate",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Grave-Soil Plate",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_elite"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_gravesoilplate",
+          "cost": 20,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_shroudofthebled",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Shroud of the Bled",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_shroudofthebled",
+          "cost": 12,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_coffinofgravesoil",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Coffin of Grave-Soil",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_coffinofgravesoil",
+          "cost": 15,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_vialofstolenblood",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Vial of Stolen Blood",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_vialofstolenblood",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_herdbell",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Herd-Bell",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_herdbell",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_copyoftheusages",
+          "source": "homebrew",
+          "tags": [],
+          "name": "A Copy of the Usages",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_copyoftheusages",
+          "cost": 8,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_pouchofgraveearth",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Pouch of Grave-Earth",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_pouchofgraveearth",
+          "cost": 8,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_pistolrevolver",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Pistol",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_pistolrevolver",
+          "cost": 6,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_shotgun",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Shotgun",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_shotgun",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_knifedagger",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Knife",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_knifedagger",
+          "cost": 1,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_trenchclub",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Trench Club",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_trenchclub",
+          "cost": 3,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_swordaxe",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Sword/Axe",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_swordaxe",
+          "cost": 4,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_trenchpolearm",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Polearm",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_trenchpolearm",
+          "cost": 7,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_doublehandedbluntweapon",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Great-Hammer/Maul",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_doublehandedbluntweapon",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_greatswordaxe",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Great-Sword/Axe",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_greatswordaxe",
+          "cost": 12,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_standardarmour",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Standard Armour",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_standardarmour",
+          "cost": 15,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_reinforcedarmour",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Reinforced Armour",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_elite"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_reinforcedarmour",
+          "cost": 40,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_trenchshield",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Trench Shield",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_trenchshield",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_combathelmet",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Combat Helmet",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_combathelmet",
+          "cost": 5,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_gasmask",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Gas Mask",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_gasmask",
+          "cost": 5,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_troopflag",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Troop Flag",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_troopflag",
+          "cost": 1,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_shrikeclaws",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Shrike Claws",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "id",
+                  "value": "md_dragoncourt_shrike"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_shrikeclaws",
+          "cost": 0,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_deathshriek",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Deathshriek",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "id",
+                  "value": "md_dragoncourt_moroi"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_deathshriek",
+          "cost": 0,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_carlig",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Carlig",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_carlig",
+          "cost": 8,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_gravesickle",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Grave-Sickle",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_gravesickle",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_buzdugan",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Buzdugan",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_buzdugan",
+          "cost": 14,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_gravedampsprayer",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Grave-Damp Sprayer",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_gravedampsprayer",
+          "cost": 30,
+          "costtype": 0,
+          "limit": 2
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_graveiron",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Grave-Iron",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_graveiron",
+          "cost": 35,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_censerofgravesoil",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Censer of Grave-Soil",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_censerofgravesoil",
+          "cost": 20,
+          "costtype": 0,
+          "limit": 2
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_yokeoftheherd",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Yoke of the Herd",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "id",
+                  "value": "md_dragoncourt_leech"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_yokeoftheherd",
+          "cost": 20,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_cullingknife",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Culling Knife",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "id",
+                  "value": "md_dragoncourt_veinwife"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_cullingknife",
+          "cost": 0,
+          "costtype": 0,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_medikit",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Medi-kit",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_medikit",
+          "cost": 10,
+          "costtype": 0,
+          "limit": 0
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_greybrothers",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Grey Brothers",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_greybrothers",
+          "cost": 1,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_hailstonephial",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Hailstone Phial",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_hailstonephial",
+          "cost": 2,
+          "costtype": 1,
+          "limit": 2
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_caskcart",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Cask Cart",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_caskcart",
+          "cost": 3,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_gravenail",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Grave-Nail",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_gravenail",
+          "cost": 3,
+          "costtype": 1,
+          "limit": 2
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_cupoftargoviste",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Cup of Targoviste",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_vampire"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_cupoftargoviste",
+          "cost": 4,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_nightglasssight",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Nightglass Sight",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_vampire"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_nightglasssight",
+          "cost": 4,
+          "costtype": 1,
+          "limit": 2
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_rookery",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Rookery",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_rookery",
+          "cost": 4,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_draconistcollar",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Draconist Collar",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_elite"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_draconistcollar",
+          "cost": 5,
+          "costtype": 1,
+          "limit": 3
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_thirstingrounds",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Thirsting Rounds",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_vampire"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_thirstingrounds",
+          "cost": 5,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_vesperbell",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Vesper Bell",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_vampire"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_vesperbell",
+          "cost": 7,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_buciumofthepass",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Bucium of the Pass",
+          "contextdata": {
+            "faction_eq_restriction": {
+              "permitted": [
+                {
+                  "res_type": "keyword",
+                  "value": "kw_dominion"
+                }
+              ]
+            }
+          },
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_buciumofthepass",
+          "cost": 8,
+          "costtype": 1,
+          "limit": 1
+        },
+        {
+          "id": "rel_dragoncourt_fc_eq_dc_forestoftheimpaled",
+          "source": "homebrew",
+          "tags": [],
+          "name": "The Forest of the Impaled",
+          "contextdata": [],
+          "faction_id": [
+            "fc_dragoncourt"
+          ],
+          "equipment_id": "eq_dc_forestoftheimpaled",
+          "cost": 10,
+          "costtype": 1,
+          "limit": 1
+        }
+      ]
+    },
+    {
+      "type": "modelequipmentrelationship",
+      "data": [
+        {
+          "id": "rel_dragoncourt_md_eq_eq_dc_shrikeclaws",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Shrike Claws (innate)",
+          "contextdata": [],
+          "options": [],
+          "model_id": [
+            "md_dragoncourt_shrike"
+          ],
+          "mandatory_equipment": [
+            "eq_dc_shrikeclaws"
+          ],
+          "removable": false
+        },
+        {
+          "id": "rel_dragoncourt_md_eq_eq_dc_deathshriek",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Deathshriek (innate)",
+          "contextdata": [],
+          "options": [],
+          "model_id": [
+            "md_dragoncourt_moroi"
+          ],
+          "mandatory_equipment": [
+            "eq_dc_deathshriek"
+          ],
+          "removable": false
+        },
+        {
+          "id": "rel_dragoncourt_md_eq_veinwife",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Vein-Wife Kit",
+          "contextdata": [],
+          "options": [],
+          "model_id": [
+            "md_dragoncourt_veinwife"
+          ],
+          "mandatory_equipment": [
+            "eq_standardarmour",
+            "eq_gasmask",
+            "eq_medikit",
+            "eq_dc_cullingknife"
+          ],
+          "removable": false
+        },
+        {
+          "id": "rel_dragoncourt_md_eq_calusar",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Calusar Kit",
+          "contextdata": [],
+          "options": [],
+          "model_id": [
+            "md_dragoncourt_calusar"
+          ],
+          "mandatory_equipment": [
+            "eq_trenchclub",
+            "eq_swordaxe"
+          ],
+          "removable": false
+        },
+        {
+          "id": "rel_dragoncourt_md_eq_solomonar",
+          "source": "homebrew",
+          "tags": [],
+          "name": "Weather-Staff",
+          "contextdata": [],
+          "options": [],
+          "model_id": [
+            "md_dragoncourt_solomonar"
+          ],
+          "mandatory_equipment": [
+            "eq_trenchpolearm"
+          ],
+          "removable": false
+        }
+      ]
+    }
+  ]
+}
