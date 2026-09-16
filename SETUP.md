@@ -1,5 +1,11 @@
 # Setting this up locally
 
+> **Windows:** use `.\build.ps1` wherever this guide says `make`
+> (`.\build.ps1 check` for `make check`). PowerShell may need
+> `Set-ExecutionPolicy -Scope Process RemoteSigned` once per session. Also avoid
+> `>>` to append to files in PowerShell 5.1 — it writes UTF-16 and will corrupt
+> the UTF-8 markdown.
+
 ## 1. Put it somewhere permanent
 
 ```sh
@@ -45,6 +51,10 @@ WeasyPrint needs system libraries:
 
 - macOS: `brew install pango gdk-pixbuf libffi`
 - Debian/Ubuntu: `sudo apt install libpango-1.0-0 libpangoft2-1.0-0`
+- Windows: install the GTK3 runtime
+  (github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer), then
+  reopen your terminal. If WeasyPrint still fails to import, the codex and
+  changelog markdown are unaffected — only PDF rendering needs it.
 
 ## 5. Prove the pipeline works
 

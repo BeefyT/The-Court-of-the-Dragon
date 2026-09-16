@@ -1,0 +1,6 @@
+# Keep LF in the working tree so generated files are byte-stable across
+# platforms. Without this, Git checks out CRLF on Windows, the generators
+# write LF, and every build shows a spurious whole-file diff.
+* text=auto eol=lf
+*.pdf binary
+*.zip binary
