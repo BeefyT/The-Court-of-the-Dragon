@@ -15,14 +15,14 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else \
     os.path.join(ROOT, "docs", "Court-of-the-Dragon-Codex.md")
 SNAP = os.path.join(ROOT, "data", "core-keywords.json")
 
-doc = json.load(open(SRC))
+doc = json.load(open(SRC, encoding="utf-8"))
 B = {b["type"]: {o["id"]: o for o in b["data"]} for b in doc["files"]}
 ORDER = {b["type"]: [o["id"] for o in b["data"]] for b in doc["files"]}
 
 # keyword display names: core snapshot + this homebrew
 KWN = {}
 try:
-    KWN.update(json.load(open(SNAP)))
+    KWN.update(json.load(open(SNAP, encoding="utf-8")))
 except FileNotFoundError:
     print("warning: data/core-keywords.json missing; core keyword names will "
           "fall back to their ids", file=sys.stderr)
@@ -438,7 +438,7 @@ for p in paras(lh):
 
 md = "\n".join(out)
 md = re.sub(r"\n{3,}", "\n\n", md)
-open(OUT, "w").write(md + "\n")
+open(OUT, "w", encoding="utf-8", newline="\n").write(md + "\n")
 print("wrote", OUT, "|", len(md.split("\n")), "lines")
 print("  elite:", len(ELITE), "troops:", len(TROOPS), "mercs:", len(MERCS),
       "glory:", len(glory))

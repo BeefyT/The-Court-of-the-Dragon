@@ -429,7 +429,7 @@ LEECH_NEW = "The Leech may take any Battlekit from the Court Armoury."
 
 
 def main():
-    doc = json.load(open(BASE))
+    doc = json.load(open(BASE, encoding="utf-8"))
     blocks = {b["type"]: b for b in doc["files"]}
     report = []
 
@@ -485,7 +485,8 @@ def main():
                 edits += 1
     report.append(f"agreed edits applied: {edits} of 2")
 
-    json.dump(doc, open(OUT, "w"), indent=2, ensure_ascii=False)
+    json.dump(doc, open(OUT, "w", encoding="utf-8", newline="\n"),
+              indent=2, ensure_ascii=False)
     print("base:", BASE)
     print("out: ", OUT)
     for line in report:

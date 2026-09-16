@@ -15,6 +15,10 @@ Set-Location $root
 
 $py = if (Get-Command py -ErrorAction SilentlyContinue) { "py" } else { "python" }
 
+# Windows consoles default to a legacy codepage; the data is UTF-8 throughout.
+$env:PYTHONUTF8 = "1"
+$env:PYTHONIOENCODING = "utf-8"
+
 function Invoke-Codex {
     & $py tools\gen_codex.py
     if ($LASTEXITCODE -ne 0) { throw "gen_codex failed" }
@@ -34,7 +38,7 @@ function Invoke-Pdf {
 
 function Invoke-Check {
     & $py tools\check.py
-    if ($LASTEXITCODE -ne 0) { throw "check failed - codex and JSON have drifted" }
+    if ($LASTEXITCODE -ne 0) { throw "check reported a problem (see output above)" }
 }
 
 switch ($Target) {

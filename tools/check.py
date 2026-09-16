@@ -28,9 +28,9 @@ def disp(n):
 
 
 def main():
-    doc = json.load(open(JSON))
+    doc = json.load(open(JSON, encoding="utf-8"))
     B = {b["type"]: b["data"] for b in doc["files"]}
-    md = open(MD).read()
+    md = open(MD, encoding="utf-8").read()
     errs, warns = [], []
 
     byid = {e["id"]: e for e in B["equipment"]}

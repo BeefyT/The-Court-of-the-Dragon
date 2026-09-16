@@ -1,0 +1,71 @@
+name: Build codex and PDFs
+
+# Regenerates docs/Court-of-the-Dragon-Codex.md from the JSON, verifies the two
+# still agree, renders the three PDFs, and commits anything that changed.
+# WeasyPrint's system libraries install cleanly on Linux, which is why this runs
+# here rather than on a Windows desktop.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'docs/**'
+      - 'tools/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install WeasyPrint system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b \
+                                  libpangocairo-1.0-0 libcairo2 libgdk-pixbuf-2.0-0
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate the codex from the JSON
+        run: python tools/gen_codex.py
+
+      - name: Verify the codex matches the JSON
+        run: python tools/check.py
+
+      - name: Render PDFs
+        run: |
+          python tools/mkpdf.py docs/Court-of-the-Dragon-Codex.md \
+            dist/Court-of-the-Dragon-Codex.pdf "Court of the Dragon"
+          python tools/mkpdf.py docs/CHANGELOG.md \
+            dist/Court-of-the-Dragon-Changelog.pdf "Court of the Dragon — Changelog"
+          python tools/mkpdf.py docs/Court-of-the-Dragon-Campaign.md \
+            dist/Court-of-the-Dragon-Campaign.pdf "Court of the Dragon — The Long Hunger"
+
+      - name: Upload PDFs as a build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: court-of-the-dragon-pdfs
+          path: dist/*.pdf
+
+      - name: Commit regenerated files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/Court-of-the-Dragon-Codex.md dist/*.pdf
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "Rebuild codex and PDFs [skip ci]"
+            git push
+          fi
