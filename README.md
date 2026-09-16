@@ -8,6 +8,8 @@ Well Done Minis.
 
 ---
 
+**New here, or coming back after a break? Read [WORKFLOW.md](WORKFLOW.md).**
+
 ## The one rule of this repo
 
 **`data/CourtOfTheDragon-TrenchCompanion.json` is the source of truth.**
@@ -38,6 +40,7 @@ docs/
   Court-of-the-Dragon-Codex.md    GENERATED - do not hand-edit
   CHANGELOG.md                    hand-written
   Court-of-the-Dragon-Campaign.md The Long Hunger, with design commentary
+  archive/                        superseded docs, kept for their reasoning
 dist/
   *.pdf                           GENERATED
 ```
@@ -75,6 +78,25 @@ schema, so they are held as prose constants inside `tools/gen_codex.py`:
 Everything else — armoury tables, Court Battlekit, all warband entries,
 mercenaries, glory items, special rules, the campaign section — is derived from
 the JSON.
+
+## A note for contributors
+
+Every file in this repo is UTF-8 — the data uses 👑, ☼ and Romanian
+diacritics throughout. The scripts open files with an explicit
+`encoding="utf-8"` because Windows otherwise defaults to cp1252 and the JSON
+fails to parse. Keep that explicit in anything new, and avoid PowerShell's `>>`
+redirection on these files (it writes UTF-16).
+
+## CI
+
+`.github/workflows/build.yml` regenerates the codex, runs the drift check and
+renders the PDFs on every push that touches `data/`, `docs/` or `tools/`, then
+commits the results back. WeasyPrint's system libraries install cleanly on
+Linux, so PDFs are built there rather than on a Windows desktop. You can also
+trigger it by hand from the Actions tab.
+
+This means local PDF rendering is optional: edit the JSON, commit, push, and the
+PDFs update themselves.
 
 ## Versioning
 
