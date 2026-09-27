@@ -123,7 +123,7 @@ The Court's power flows from three Elders sleeping in the crypts beneath Castle 
 
 **Elder Blood**
 
-- **Unhallowed Flesh** *(25👑)* — permanent −1 INJURY MODIFIER, which stacks with worn armour.
+- **Unhallowed Flesh** *(25👑)* — Injury Rolls against this model suffer −1 INJURY DICE, applied after all other modifiers; this can cancel The Betrayed Church bonus.
 
 **Ladder**
 
@@ -276,8 +276,8 @@ DOMINION only. The Order's law, copied in a hand that never shook. The bearer's 
 **Pouch of Grave-Earth** · *Equipment · CONSUMABLE*  
 Consumable. A fistful of home soil pressed into the wound. Once per game, at the end of the bearer's Activation, the bearer removes up to 2 additional BLOOD MARKERS.
 
-**Grave-Damp Sprayer** · *2-Handed · 8" · FLAMETHROWER · GAS*  
-2-Handed, 8", -1 INJURY DICE, FLAMETHROWER, GAS. A brass pump and a bladder of tomb air drawn off the deep vaults; it does not burn, it simply is not breathable. Choke-Damp: a Ranged Attack made with a Grave-Damp Sprayer may target a friendly model.
+**Grave-Damp Sprayer** · *2-Handed · 8" · FLAMETHROWER · GAS · IGNORE ARMOUR*  
+2-Handed, 8", -1 INJURY DICE, FLAMETHROWER, GAS, IGNORE ARMOUR. A brass pump and a bladder of tomb air drawn off the deep vaults; it does not burn, it simply is not breathable. Choke-Damp: a Ranged Attack made with a Grave-Damp Sprayer may target a friendly model.
 
 **Cârlig** · *1-Handed Melee*  
 1-Handed Melee. A flesh-hook on a short chain; it is not for killing. The Hook Holds: when an enemy model within 1" of a model with a Cârlig takes a Retreat ACTION, place 1 BLOOD MARKER next to that enemy model before any Melee Attacks allowed by the retreat are resolved.
@@ -310,7 +310,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 | 7"/Infantry | +1 DICE | +3 DICE | 0 | 40mm |
 
 **Battlekit:** The Voivode may take any Battlekit from the Court Armoury and may take a Pistol.  
-**Keywords:** DRAGON COURT, ELITE, LEADER, FEAR, TOUGH, STRONG, FEED, VAMPIRE, REGENERATE (2)
+**Keywords:** DRAGON COURT, ELITE, LEADER, FEAR, TOUGH, STRONG, FEED, VAMPIRE, DOMINION, REGENERATE (2)
 
 **Master of the Hunger:** The Voivode can never become Blood-Crazed, regardless of his Sated count.
 
@@ -318,7 +318,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 
 **Sated Powers:** The Voivode may use one Sated Power per Activation:
 
-- Crimson Surge (2 Sated): until the end of his Activation, his Melee Attacks gain CLEAVE 2.
+- Crimson Surge (3 Sated): until the end of his Activation, his Melee Attacks gain CLEAVE 2.
 
 - Knit the Flesh (X Sated): remove X BLOOD MARKERS, to a maximum of 2, from himself or a friendly vampire within 6".
 
@@ -333,7 +333,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 | 6"/Infantry | — | +0 DICE | 0 | 32mm |
 
 **Battlekit:** The Strigoi Witch may take any Battlekit from the Court Armoury.  
-**Keywords:** DRAGON COURT, ELITE, FEAR, FEED, VAMPIRE, REGENERATE (1)
+**Keywords:** DRAGON COURT, ELITE, FEAR, FEED, VAMPIRE, DOMINION, REGENERATE (1)
 
 **Blood Sorcery:** To cast a spell she pays its BLOOD MARKER cost from any models on the battlefield (friend or foe). She may Overcharge by additionally spending her own Sated, as noted per spell. Each time she casts, she gains 1 Sated.
 
@@ -404,7 +404,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 | 6"/Infantry | — | −1 DICE | 0 | 32mm |
 
 **Battlekit:** The Iele may take any Battlekit from the Court Armoury.  
-**Keywords:** DRAGON COURT, ELITE, FEAR, FEED, VAMPIRE, REGENERATE (1)
+**Keywords:** DRAGON COURT, ELITE, FEAR, FEED, VAMPIRE, DOMINION, REGENERATE (1)
 
 **Allure:** Enemy models must treat all attacks against the Iele as Risky Success Rolls while within 6" of her.
 
@@ -488,7 +488,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 
 **Cattle:** When a Bled is taken Out of Action by an enemy, a friendly vampire within 3" may immediately gain 1 Sated.
 
-**Offer the Vein:** A friendly vampire within 1" of a Bled may take a Feed ACTION on it, adding +1 DICE to the Risky Success Roll, and make an Injury Roll against the Bled. The vampire gains its Sated as normal; the Bled suffers the injury and may be taken Out of Action.
+**Offer the Vein:** Once per Activation, a friendly VAMPIRE within 1" of a friendly Bled may take a Feed ACTION targeting it, adding +1 DICE to the Risky Success Roll. On a Success or Critical Success, place the BLOOD MARKER and the vampire gains its Sated as normal; then make an Injury Roll against the Bled, which may take it Out of Action. On a Failure, the Bled suffers no Injury Roll and the vampire's Activation ends as normal.
 
 ---
 
@@ -513,7 +513,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 
 **Limited Potential:** This model cannot have more than 7 Experience Points.
 
-### THE CĂLUȘAR — 5☼
+### THE CĂLUȘAR — 2☼
 
 *0–1 per Warband. He does not consider himself a mercenary. He is a physician.*
 
@@ -532,7 +532,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 
 **Limited Potential:** This model cannot have more than 7 Experience Points.
 
-### THE SOLOMONAR — 6☼
+### THE SOLOMONAR — 3☼
 
 *0–1 per Warband. Ten scholars enter the Scholomance; nine walk out. He paid, and owes nothing to anyone since.*
 
@@ -549,7 +549,7 @@ Leech only. A Bled chained at the shoulder, walking where it is walked. Chained 
 
 **Limited Potential:** This model cannot have more than 7 Experience Points.
 
-### THE PRICULICI — 6☼
+### THE PRICULICI — 4☼
 
 *0–1 per Warband. Some the blood took further down, until the man was gone and only the appetite and the wings remained.*
 
@@ -580,16 +580,16 @@ A Court of the Dragon Warband may purchase the Court Glory Items. It may also pu
 |---|---|---|
 | The Grey Brothers | Limit 1 | 1☼ |
 | Hailstone Phial | Limit 2 | 2☼ |
+| Nightglass Sight | VAMPIRE only, Limit 2 | 2☼ |
+| Thirsting Rounds | VAMPIRE only, Limit 1 | 2☼ |
+| Draconist Collar | ELITE only, Limit 3 | 3☼ |
 | The Cask Cart | Limit 1 | 3☼ |
+| The Cup of Târgoviște | VAMPIRE only, Limit 1 | 3☼ |
 | The Grave-Nail | Limit 2 | 3☼ |
-| Nightglass Sight | VAMPIRE only, Limit 2 | 4☼ |
-| The Cup of Târgoviște | VAMPIRE only, Limit 1 | 4☼ |
-| The Rookery | Limit 1 | 4☼ |
-| Draconist Collar | ELITE only, Limit 3 | 5☼ |
-| Thirsting Rounds | VAMPIRE only, Limit 1 | 5☼ |
-| The Vesper Bell | VAMPIRE only, Limit 1 | 7☼ |
-| The Bucium of the Pass | DOMINION only, Limit 1 | 8☼ |
-| The Forest of the Impaled | Limit 1 | 10☼ |
+| The Rookery | Limit 1 | 3☼ |
+| The Vesper Bell | VAMPIRE only, Limit 1 | 4☼ |
+| The Bucium of the Pass | DOMINION only, Limit 1 | 5☼ |
+| The Forest of the Impaled | Limit 1 | 6☼ |
 
 ### Glory Item Cartulary [•]
 
@@ -599,26 +599,26 @@ Uses the Trench Dog rules in full — 25mm base, 8"/Infantry, Melee +0 DICE, Arm
 **Hailstone Phial**  
 8", ASSAULT, BLAST 3", -1 INJURY DICE, IGNORE COVER, SCATTER. A finger of ice hewn from the frozen lake above the clouds, sealed in lead and wax; it does not melt. Hewn from the Frozen Lake: after the attack has been resolved, the area within 3" of the target point is treated as Difficult terrain until the end of the following Turn. This affects all models, friend and foe.
 
-**The Cask Cart**  
-A herd drunk dry yields one night's strength; a herd kept yields a cellar. The Tithe, Not the Slaughter: a Cask Cart is not allocated to a model; add it to your Arsenal. At the end of each game, for each friendly Bled that is on the battlefield and has 1 or more BLOOD MARKERS, your Warband gains 1 Vintage, to a maximum of 3 Vintage per game. See Campaign Play: The Long Hunger.
-
-**The Grave-Nail**  
-1-Handed Melee, ARMOUR PIERCING. Gravediggers hammer a square iron nail through the skull before the lid goes down, so that what is in the box stays in the box. Drawn out and set into a haft, it keeps the only trick it ever knew.
-
 **Nightglass Sight**  
-Smoked crystal ground in the cellars of the Scholomance; the lens does nothing a mortal could measure, it simply stops the dark from being far away. Cold Sight: when this Glory Item is given to a model, choose 1 Ranged Weapon that the model has and which does not have the AUTOMATIC or BLAST keyword. That Weapon gains the IGNORE LONG RANGE keyword. A Nightglass Sight cannot be reallocated during the Quartermaster Step.
+Smoked crystal ground in the cellars of the Scholomance; the lens does nothing a mortal could measure, it simply stops the dark from being far away. Cold Sight: when this Glory Item is given to a model, choose 1 Ranged Weapon that the model has and which does not have the AUTOMATIC or BLAST keyword. That Weapon gains the IGNORE LONG RANGE keyword, and Ranged Attacks made with it add +1 DICE against a target that has 1 or more BLOOD MARKERS. A Nightglass Sight cannot be reallocated during the Quartermaster Step.
 
-**The Cup of Târgoviște**  
-Represented by a model or marker on a 25mm base. What is in it is not water. Set Out at the Fountain: after you deploy the model that has the Cup, you may also deploy the Cup anywhere on the battlefield more than 6" from any enemy model; that model is then no longer carrying it, and the Cup cannot be moved, attacked or removed for the rest of the game. Drink ACTION: any model, friend or foe, within 1" of the Cup may take a Drink ACTION, removing 1 BLOOD MARKER from it, or 2 BLOOD MARKERS if it is an enemy model; once per game per model. The Debt of Hospitality: if the model taking the Drink ACTION is an enemy model, the closest friendly model with the VAMPIRE keyword gains 1 Sated.
-
-**The Rookery**  
-A wicker loft strapped to the baggage wagon; what lives in it is not tame and is not fed enough to leave. The Loft Is Never Empty: not allocated to a model; add it to your Arsenal. In each game you may deploy 1 Strix in addition to the models in your Warband. It does not count towards your Warband's model count, Threshold Value or Field Strength, and is not counted as part of your Warband for Morale Checks. If it is taken Out of Action, do not roll for its survival — it is replaced free of charge before your next game.
+**Thirsting Rounds**  
+AMMUNITION. A chipped fang set in the mould and the lead poured around it; the tooth does the work wherever the ball lands. Drink at Distance: the first time in each Activation that a Ranged Attack made with the chosen Weapon wounds a model, the firing model gains 1 Sated. This does not happen if the target has 1 or more BLESSING MARKERS or has the ARTIFICIAL keyword.
 
 **Draconist Collar**  
 The red cross that lay across their backs has been ground off with a file — not prised away, not lost, filed. The Oath Half-Kept: a model with a Draconist Collar may take a Feed ACTION against a model that has 1 or more BLESSING MARKERS, despite The Sanctified. If the Feed ACTION is a Success or Critical Success, remove 1 BLESSING MARKER from the target and place it next to the feeding model. Grace Does Not Keep: at the end of each Turn, remove all BLESSING MARKERS from models with the DRAGON COURT keyword.
 
-**Thirsting Rounds**  
-AMMUNITION. A chipped fang set in the mould and the lead poured around it; the tooth does the work wherever the ball lands. Drink at Distance: the first time in each Activation that a Ranged Attack made with the chosen Weapon wounds a model, the firing model gains 1 Sated. This does not happen if the target has 1 or more BLESSING MARKERS or has the ARTIFICIAL keyword.
+**The Cask Cart**  
+A herd drunk dry yields one night's strength; a herd kept yields a cellar. The Tithe, Not the Slaughter: a Cask Cart is not allocated to a model; add it to your Arsenal. At the end of each game, for each friendly Bled that is on the battlefield and has 1 or more BLOOD MARKERS, your Warband gains 1 Vintage, to a maximum of 3 Vintage per game. See Campaign Play: The Long Hunger.
+
+**The Cup of Târgoviște**  
+Represented by a model or marker on a 25mm base. What is in it is not water. Set Out at the Fountain: after you deploy the model that has the Cup, you may also deploy the Cup anywhere on the battlefield more than 6" from any enemy model; that model is then no longer carrying it, and the Cup cannot be moved, attacked or removed for the rest of the game. Drink ACTION: any model, friend or foe, within 1" of the Cup may take a Drink ACTION, removing 1 BLOOD MARKER from it, or 2 BLOOD MARKERS if it is an enemy model; once per game per model. The Debt of Hospitality: if the model taking the Drink ACTION is an enemy model, the closest friendly model with the VAMPIRE keyword gains 1 Sated.
+
+**The Grave-Nail**  
+1-Handed Melee, ARMOUR PIERCING. Gravediggers hammer a square iron nail through the skull before the lid goes down, so that what is in the box stays in the box. Drawn out and set into a haft, it keeps the only trick it ever knew.
+
+**The Rookery**  
+A wicker loft strapped to the baggage wagon; what lives in it is not tame and is not fed enough to leave. The Loft Is Never Empty: not allocated to a model; add it to your Arsenal. In each game you may deploy 1 Strix in addition to the models in your Warband. It does not count towards your Warband's model count, Threshold Value or Field Strength, and is not counted as part of your Warband for Morale Checks. If it is taken Out of Action, do not roll for its survival — it is replaced free of charge before your next game.
 
 **The Vesper Bell**  
 Cast to call a congregation in at dusk; filed of its cross, it still does — the Order only changed which one. Ring for Evensong ACTION: take a Risky Success Roll and add +1 DICE. On a Failure nothing happens and the model's Activation ends. On a Success or Critical Success, choose 1 enemy model within 12" in Line of Sight; for the rest of the game, attacks made against that model by friendly models have the IGNORE ARMOUR keyword. Once successfully used, it may not be used again in the same game.

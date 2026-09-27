@@ -5,6 +5,50 @@
 
 ---
 
+## v0.11 — Fourth Playtest: Glory Repricing & Rules Fixes
+
+### Changed — Glory Items and Mercenaries repriced
+
+A warband earns roughly 1–2☼ per game from Glorious Deeds (contested, first-come), plus lumpy Exploration windfalls that grow after game 5. One-off games get 6☼ in total. The v0.10 prices were set too high for both: the Solomonar and Priculici ate an entire one-off budget, and the Bucium and Forest could not be bought at all. Nothing now costs more than 6☼, so every item fits a one-off, while the late campaign's Exploration income (free items up to 9–10☼, shops up to 12☼) still makes the top tier a real save-up.
+
+| Item | v0.10 | v0.11 |
+|---|---|---|
+| The Călușar | 5☼ | 2☼ |
+| Nightglass Sight | 4☼ | 2☼ |
+| Thirsting Rounds | 5☼ | 2☼ |
+| The Solomonar | 6☼ | 3☼ |
+| Draconist Collar | 5☼ | 3☼ |
+| The Cup of Târgoviște | 4☼ | 3☼ |
+| The Rookery | 4☼ | 3☼ |
+| The Priculici | 6☼ | 4☼ |
+| The Vesper Bell | 7☼ | 4☼ |
+| The Bucium of the Pass | 8☼ | 5☼ |
+| The Forest of the Impaled | 10☼ | 6☼ |
+
+Unchanged: The Grey Brothers (1☼), Hailstone Phial (2☼), The Cask Cart (3☼), The Grave-Nail (3☼), The Vein-Wife (3☼).
+
+- **Nightglass Sight** also gains +1 DICE to Ranged Attacks with the chosen weapon against targets carrying 1 or more BLOOD MARKERS. IGNORE LONG RANGE alone duplicated the Huntsman's Ascended effect; the new clause ties the sight to the Court's blood-marker engine (Bleeding Shot, Deathshriek, Censer of Grave-Soil).
+
+### Changed — the Voivode
+
+- **Crimson Surge** now costs **3 Sated** (was 2). He must be Ascended to afford it, and spending it can drop him out of Ascended by his next Activation.
+- **Unhallowed Flesh** (Cazimir Elder Blood) is now **−1 INJURY DICE** on Injury Rolls against the bearer (was a −1 INJURY MODIFIER that stacked with worn armour). A Voivode in Reinforced Armour with Unhallowed Flesh could reach an effective −4, with REGENERATE (2), Knit the Flesh and the Pouch of Grave-Earth on top. As an INJURY DICE penalty it no longer stacks with armour, and by design it **can cancel The Betrayed Church's +1 INJURY DICE** — Cazimir's blood is the answer to Blessed attackers.
+
+### Changed — Armoury
+
+- **Grave-Damp Sprayer** gains **IGNORE ARMOUR**. Its −1 INJURY DICE remains the trade-off.
+
+### Fixed
+
+- **DOMINION** was missing from the keyword lines of the **Voivode**, the **Strigoi Witch** and the **Iele**, even though their rules (the Voivode's Leash radius, the Witch's Red Hour and the Iele's Maddening Dance) already referred to it.
+- **Offer the Vein** clarified: once per Activation; the Injury Roll against the Bled happens only on a successful Feed; a failure ends the vampire's Activation as normal and the Bled is unharmed.
+
+### Held
+
+- **The Throne of Thorns** (Negru Vodă ★) was flagged in playtesting as having little impact. Held for a redesign pass; unchanged in v0.11.
+
+---
+
 ## v0.10 — Glory Items, the Armoury Expansion & Reconciliation
 
 ### Fixed — the codex was four releases stale

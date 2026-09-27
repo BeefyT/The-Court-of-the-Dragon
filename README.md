@@ -117,7 +117,7 @@ the ids are stable. Two schema notes worth remembering:
 
 ## Status
 
-Rules v0.10. Three physical playtests behind it, 2–1 record. The Long Hunger
+Rules v0.11. Four physical playtests behind it. The Long Hunger
 campaign layer is v0.5 and provisional — all its rates are dials.
 
 Open: the Vătaf (undecided, pending playtest), the Eclipse-Tooth glory item
