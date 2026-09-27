@@ -219,7 +219,7 @@ The Court's power flows from three Elders sleeping in the crypts beneath Castle 
 
 **Elder Blood**
 
-- **Unhallowed Flesh** *(25{DUC})* \u2014 permanent \u22121 INJURY MODIFIER, which stacks with worn armour.
+- **Unhallowed Flesh** *(25{DUC})* \u2014 Injury Rolls against this model suffer \u22121 INJURY DICE, applied after all other modifiers; this can cancel The Betrayed Church bonus.
 
 **Ladder**
 

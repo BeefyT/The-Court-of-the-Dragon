@@ -13,7 +13,7 @@
       "tags": {
         "desc_type": "paragraph"
       },
-      "content": "Rules v0.10. Free community content, requires the Trench Crusade rulebook. Original IP by Well Done Minis."
+      "content": "Rules v0.11. Free community content, requires the Trench Crusade rulebook. Original IP by Well Done Minis."
     }
   ],
   "files": [
@@ -736,7 +736,7 @@
               "tags": {
                 "desc_type": "paragraph"
               },
-              "content": "Crimson Surge (2 Sated): until the end of his Activation, his Melee Attacks gain CLEAVE 2."
+              "content": "Crimson Surge (3 Sated): until the end of his Activation, his Melee Attacks gain CLEAVE 2."
             },
             {
               "tags": {
@@ -1330,7 +1330,7 @@
               "tags": {
                 "desc_type": "default"
               },
-              "content": "A friendly vampire within 1\" of a Bled may take a Feed ACTION on it, adding +1 DICE to the Risky Success Roll, and make an Injury Roll against the Bled. The vampire gains its Sated as normal; the Bled suffers the injury and may be taken Out of Action."
+              "content": "Once per Activation, a friendly VAMPIRE within 1\" of a friendly Bled may take a Feed ACTION targeting it, adding +1 DICE to the Risky Success Roll. On a Success or Critical Success, place the BLOOD MARKER and the vampire gains its Sated as normal; then make an Injury Roll against the Bled, which may take it Out of Action. On a Failure, the Bled suffers no Injury Roll and the vampire's Activation ends as normal."
             }
           ],
           "options": []
@@ -1622,7 +1622,8 @@
             "kw_tough",
             "kw_strong",
             "kw_feed",
-            "kw_vampire"
+            "kw_vampire",
+            "kw_dominion"
           ],
           "abilities": [
             "ab_dc_masterofthehunger",
@@ -1681,7 +1682,8 @@
             "kw_elite",
             "kw_fear",
             "kw_feed",
-            "kw_vampire"
+            "kw_vampire",
+            "kw_dominion"
           ],
           "abilities": [
             "ab_dc_bloodsorcery",
@@ -1861,7 +1863,8 @@
             "kw_elite",
             "kw_fear",
             "kw_feed",
-            "kw_vampire"
+            "kw_vampire",
+            "kw_dominion"
           ],
           "abilities": [
             "ab_dc_allure",
@@ -2628,7 +2631,7 @@
           "model_id": "md_dragoncourt_calusar",
           "captain": false,
           "mercenary": true,
-          "cost": 5,
+          "cost": 2,
           "cost_type": 1,
           "restricted_models": [],
           "warband_minimum": 0,
@@ -2649,7 +2652,7 @@
           "model_id": "md_dragoncourt_solomonar",
           "captain": false,
           "mercenary": true,
-          "cost": 6,
+          "cost": 3,
           "cost_type": 1,
           "restricted_models": [],
           "warband_minimum": 0,
@@ -2670,7 +2673,7 @@
           "model_id": "md_dragoncourt_priculici",
           "captain": false,
           "mercenary": true,
-          "cost": 6,
+          "cost": 4,
           "cost_type": 1,
           "restricted_models": [],
           "warband_minimum": 0,
@@ -2851,7 +2854,7 @@
               "tags": {
                 "desc_type": "default"
               },
-              "content": "Permanent -1 INJURY MODIFIER (stacks with worn armour)."
+              "content": "Injury Rolls against this model suffer -1 INJURY DICE. This applies after all other modifiers, and can cancel the +1 INJURY DICE granted by The Betrayed Church."
             }
           ],
           "options": [],
@@ -3860,7 +3863,7 @@
               "tags": {
                 "desc_type": "default"
               },
-              "content": "2-Handed, 8\", -1 INJURY DICE, FLAMETHROWER, GAS. A brass pump and a bladder of tomb air drawn off the deep vaults; it does not burn, it simply is not breathable. Choke-Damp: a Ranged Attack made with a Grave-Damp Sprayer may target a friendly model."
+              "content": "2-Handed, 8\", -1 INJURY DICE, FLAMETHROWER, GAS, IGNORE ARMOUR. A brass pump and a bladder of tomb air drawn off the deep vaults; it does not burn, it simply is not breathable. Choke-Damp: a Ranged Attack made with a Grave-Damp Sprayer may target a friendly model."
             }
           ],
           "lore": [],
@@ -3868,6 +3871,7 @@
           "keywords": [
             "kw_flamethrower",
             "kw_gas",
+            "kw_ignorearmour",
             "kw_hb470028_chokedamp"
           ],
           "modifiers": [],
@@ -4345,7 +4349,7 @@
               "tags": {
                 "desc_type": "default"
               },
-              "content": "GLORY ITEM. VAMPIRE only, Limit 2. Smoked crystal ground in the cellars of the Scholomance; the lens does nothing a mortal could measure, it simply stops the dark from being far away. Cold Sight: when this Glory Item is given to a model, choose 1 Ranged Weapon that the model has and which does not have the AUTOMATIC or BLAST keyword. That Weapon gains the IGNORE LONG RANGE keyword. A Nightglass Sight cannot be reallocated during the Quartermaster Step."
+              "content": "GLORY ITEM. VAMPIRE only, Limit 2. Smoked crystal ground in the cellars of the Scholomance; the lens does nothing a mortal could measure, it simply stops the dark from being far away. Cold Sight: when this Glory Item is given to a model, choose 1 Ranged Weapon that the model has and which does not have the AUTOMATIC or BLAST keyword. That Weapon gains the IGNORE LONG RANGE keyword, and Ranged Attacks made with it add +1 DICE against a target that has 1 or more BLOOD MARKERS. A Nightglass Sight cannot be reallocated during the Quartermaster Step."
             }
           ],
           "lore": [],
@@ -5244,7 +5248,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_cupoftargoviste",
-          "cost": 4,
+          "cost": 3,
           "costtype": 1,
           "limit": 1
         },
@@ -5267,7 +5271,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_nightglasssight",
-          "cost": 4,
+          "cost": 2,
           "costtype": 1,
           "limit": 2
         },
@@ -5281,7 +5285,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_rookery",
-          "cost": 4,
+          "cost": 3,
           "costtype": 1,
           "limit": 1
         },
@@ -5304,7 +5308,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_draconistcollar",
-          "cost": 5,
+          "cost": 3,
           "costtype": 1,
           "limit": 3
         },
@@ -5327,7 +5331,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_thirstingrounds",
-          "cost": 5,
+          "cost": 2,
           "costtype": 1,
           "limit": 1
         },
@@ -5350,7 +5354,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_vesperbell",
-          "cost": 7,
+          "cost": 4,
           "costtype": 1,
           "limit": 1
         },
@@ -5373,7 +5377,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_buciumofthepass",
-          "cost": 8,
+          "cost": 5,
           "costtype": 1,
           "limit": 1
         },
@@ -5387,7 +5391,7 @@
             "fc_dragoncourt"
           ],
           "equipment_id": "eq_dc_forestoftheimpaled",
-          "cost": 10,
+          "cost": 6,
           "costtype": 1,
           "limit": 1
         }
